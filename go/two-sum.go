@@ -1,5 +1,6 @@
 package main
 
+// question link: https://leetcode.com/problems/two-sum/description/
 import "fmt"
 
 func twoSum(nums []int, target int) []int {
