@@ -16,10 +16,25 @@ func twoSum(nums []int, target int) []int {
 	return []int{}
 }
 
+func twoSumHash(nums []int, target int) []int {
+	m := make(map[int]int)
+	for i, n1 := range nums {
+		m[n1] = i
+	}
+	for i, n1 := range nums {
+		other_half := target - n1
+		if j, ok := m[other_half]; ok && j != i {
+			return []int{i, j}
+		}
+	}
+	return []int{}
+}
+
 func main() {
 	// nums := []int{2, 7, 11, 15}
 	// target := 9
 	nums := []int{3, 2, 4}
 	target := 6
-	fmt.Println(twoSum(nums, target))
+	// fmt.Println(twoSum(nums, target))
+	fmt.Println(twoSumHash(nums, target))
 }
