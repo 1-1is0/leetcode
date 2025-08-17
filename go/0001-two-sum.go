@@ -30,7 +30,7 @@ func twoSumHash(nums []int, target int) []int {
 	return []int{}
 }
 
-func main() {
+func runTwoSum() {
 	// nums := []int{2, 7, 11, 15}
 	// target := 9
 	nums := []int{3, 2, 4}
