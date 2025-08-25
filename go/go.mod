@@ -1,3 +1,3 @@
-module leetcode/m/v2
+module github.com/1-1is0/leetcode
 
 go 1.24.5
